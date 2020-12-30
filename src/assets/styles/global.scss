@@ -1,0 +1,13 @@
+@import "./colors";
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $outerSpace;
+}
+
+* {
+  box-sizing: border-box;
+}
