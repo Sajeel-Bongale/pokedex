@@ -1,13 +1,29 @@
+@import "./font";
 @import "./colors";
 
 html {
+  font-family: $primaryFont;
+  font-size: $baseFontMob;
+  line-height: calc(#{$baseFontMob} * 1.25);
   height: 100%;
+
+  @media (min-width:481px)  {
+    font-size: $baseFontDesk;
+    line-height: calc(#{$baseFontDesk} * 1.25);
+  }
 }
 
 body {
-  color: $outerSpace;
+  color: $bodyCopyColor;
 }
 
 * {
   box-sizing: border-box;
+  font-family: $primaryFont;
+}
+
+button,
+a {
+  cursor: pointer;
+  outline: 0;
 }
